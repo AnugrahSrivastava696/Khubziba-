@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="icon" type="image/x-icon" href="Favicon.png">
+  <style>
+    /* === BODY === */
+    body {
+  margin: 0;
+  background: radial-gradient(circle, #34eb43, #3456eb);
+  position: relative;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+    /* === STICKY HEADER === */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: linear-gradient(45deg, #f542aa, #a236b3, #5736b3);
+      padding: 10px;
+      font-size: 30px;
+      color: white;
+      z-index: 10; /* ensures it stays above other content */
+    }
+.sticky2 {
+  position: sticky;
+  bottom: 0;                /* footer should stick to bottom */
+  background: yellowgreen;
+  padding: 5px 10px;        /* smaller padding */
+  font-size: 14px;          /* MUCH thinner text */
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+    /* === CENTERED VIDEO === */
+    .centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rounded-image {
+      border-radius: 10%;
+      max-width: 90%;
+      height: auto;
+    }
+
+    /* === TEXT BELOW VIDEO === */
+    .centered2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+      margin: 20px 0;
+    }
+
+    .centered2 img {
+      height: 1.2em; /* match the text height */
+      margin: 0 5px;
+    }
+
+    /* === EMOJIS === */
+    .emoji {
+      position: absolute;        /* allows free movement */
+      top: -50px;                /* start above viewport */
+      pointer-events: none;      /* don’t block clicks */
+      font-size: 2rem;           /* default size; JS can randomize */
+      animation: fall linear infinite;
+      z-index: 9999;             /* above everything */
+    }
+
+    /* CSS animation for falling emojis */
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 2;
+      }
+      100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+    .special-btn {
+border-radius: 15%;
+    }
+    
+    .special-btn:link, .special-btn:visited {
+background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.special-btn:hover {
+  background-color: rgba(0, 8, 255, 0.584);
+}
+.special-btn:active {
+  background-color:rgba(29, 198, 10, 0.678)
+}
+.header-content {
+  display: flex;
+  justify-content: space-between; /* pushes items apart */
+  align-items: center;
+}
+.header-content2 {
+  display: flex;
+  justify-content: center; /* everything centred */
+  align-items: center;
+  padding: 0;
+}
+.logo-text {
+  display: flex;
+  align-items: center;  /* vertically centers image + text */
+  gap: 10px;            /* spacing between image and text */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo-text img {
+  height: 1.5em;
+}
+  </style>
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <div class="sticky">
+    <div class="header-content">
+    <span class="logo-text"><img src="img/Favicon.png" style="height:1.5em;">Khubziba | Homepage </span>
+    <a href="comingup.html" target="_blank" class="special-btn">Coming Up</a>
+  </div>
+  </div>
+  <!-- CENTERED VIDEO -->
+  <div class="centered">
+    <h1>Welcome to Khubziba's Homepage!
+    </h1>
+    <p style="font-size:large;">This is the place where I post updates. Stay tuned!</p>
+    <a href="https://www.youtube.com/shorts/z2MT83-kPTM" target="_blank">
+      <img src="img/latestvid.png" alt="Click here to see my latest YT video!" class="rounded-image">
+    </a>
+  </div>
+  <!-- TEXT BELOW VIDEO -->
+  <div class="centered2">
+    <p style="margin:0; font-family:Arial, Helvetica, sans-serif;">
+      My latest <img src="img/YT logo.png" alt="YouTube Logo"> YouTube short!
+    </p>
+  </div>
+  <div class="centered">
+    <a href="https://www.youtube.com/watch?v=RUHaNZc49Uc" target="_blank">
+      <img src="img/Alter.png" height="500vw" alt="Click here to see my latest song - Neomontagem Alter!">
+    </a>
+  </div>
+    <div class="centered2">
+    <p style="margin:0; font-family:Arial, Helvetica, sans-serif;">
+      My latest <img src="img/Song.jpeg" alt="Song"> Song!
+    </p>
+  </div>
+  <div class="sticky2">
+    <div class="header-content2">
+      <strong>&copy; Khubziba 2026. Last updated at 1:36 PM IST, 24/3/2026.</strong>
+    </div>
+  </div>
+</body>
+</html>
