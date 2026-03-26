@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* FULL-WIDTH STICKY HEADER */
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #07db35, #5736b3);
+  color: white;
+  z-index: 9999;
+}
+
+/* THREE-SECTION HEADER */
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* left - center - right */
+  align-items: center;
+  padding: 10px;
+}
+
+/* CENTER TEXT */
+.header-title {
+  text-align: center;
+  margin: 0;
+  font-size: 1.8em;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* LEFT LOGO */
+.header-logo {
+  height: 2em;
+}
+a.p1{
+    color:white;
+    font-weight: lighter;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: color 0.4s ease; /* ← smooth fade */
+    text-decoration: none;
+}
+a.p1:hover {
+    color:blue;
+
+}
+.p2 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="sticky">
+  <div class="header-content">
+
+    <!-- LEFT SIDE -->
+    <a href="#" class="p1">LearnALang</a>
+
+    <!-- CENTER -->
+    <h1 class="header-title">LearnALang: Learn a language with full proficiency</h1>
+
+    <!-- RIGHT SIDE (empty but needed to keep center centered) -->
+
+  </div>
+</div>
+<p class="p2">Coming in late 2026/early 2027.</p>
+<p class="p2">-Khubziba</p>
+
+</body>
+</html>
